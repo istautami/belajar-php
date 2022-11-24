@@ -26,9 +26,9 @@
         values ($id_jurusan,'$nim', '$nama', '$gender', '$tpt_lahir', '$tgl_lahir', '$alamat')";
 
         if (mysqli_query($con, $sql)) {
-            echo "New record created successfully";
+            echo "DATA BERHASIL DITAMBAHKAN";
         } else {
-            echo "Error: " . $sql . "<br>" . mysqli_error($con);
+            echo "ERROR: " . $sql . "<br>" . mysqli_error($con);
         }
           
         mysqli_close($con);
